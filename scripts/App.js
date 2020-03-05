@@ -1,7 +1,7 @@
 function download(text, name, type) {
-  var text = document.getElementById("setText");
-  var a = document.getElementById("a");
-  var file = new Blob([text], {type: type});
+  let text = document.getElementById("setText");
+  let a = document.getElementById("a");
+  let file = new Blob([text], {type: type});
   a.href = URL.createObjectURL(file);
   a.download = name;
 }
